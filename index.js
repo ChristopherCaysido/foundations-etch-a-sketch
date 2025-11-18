@@ -1,5 +1,8 @@
 const mainContainer = document.querySelector("#main-container")
 
+function changeColor(element){
+    element.classList.add('color-change')
+}
 
 function createSquare(){
     const square = document.createElement('div')
