@@ -16,3 +16,12 @@ function createRow(){
     row.classList.add('row')
     return row
 }
+
+function createGrid(){
+    const grid = document.createElement('div')
+    for(let i = 0; i < 16; i++){
+        const gridRow = createRow()
+        grid.appendChild(gridRow)
+    }
+    return grid
+}
