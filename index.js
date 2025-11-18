@@ -7,6 +7,7 @@ function changeColor(element){
 function createSquare(){
     const square = document.createElement('div')
     square.classList.add('grid-square');
+    square.addEventListener('mouseenter',()=>changeColor(square))
     return square
 }
 
@@ -26,5 +27,7 @@ function createGrid(){
         const gridRow = createRow()
         grid.appendChild(gridRow)
     }
-    return grid
+    mainContainer.appendChild(grid)
 }
+
+createGrid()
