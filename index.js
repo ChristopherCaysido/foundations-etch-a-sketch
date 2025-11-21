@@ -1,7 +1,7 @@
 const mainContainer = document.querySelector("#main-container")
 
 function changeColor(element){
-    element.classList.add('color-change')
+    element.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
 }
 
 function createSquare(){
